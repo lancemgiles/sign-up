@@ -3,16 +3,63 @@
 @import 'modern-normalize/modern-normalize.css';
 
 body {
-  background-color: #79AEA3;
+  background-color: #006769;
   font-family: Mate, Georgia, 'Times New Roman', Times, serif;
   margin: 0;
+  text-align: center;
 }
 
 h1, a {
   font-family: 'Courier New', Courier, monospace;
 }
 
+a {
+  color: #40A578;
+}
+
+a:hover {
+  color: #E6FF94;
+}
+
 img {
-  display: block;
   max-inline-size: 100%;
+}
+
+#background-image {
+  z-index: 0;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#logo {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(232, 225, 239, 0.7);
+  top: 40%;
+  left: 10%;
+  max-width: 48%;
+  display: flex;
+}
+
+#main-content {
+  display: flex;
+  padding: 0 5% 0 5%;
+  background-color: #9DDE8B;
+  margin: 0 5% 0 5%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 3rem;
+}
+
+#form p {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  padding-top: 5%;
 }
